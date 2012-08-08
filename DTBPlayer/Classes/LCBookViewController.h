@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCNowPlayingViewController : UITableViewController
+@interface LCBookViewController : UITableViewController
 
-@property (strong, nonatomic) IBOutlet UIImageView *controls;
 @end

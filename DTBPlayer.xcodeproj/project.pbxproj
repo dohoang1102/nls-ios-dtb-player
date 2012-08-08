@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9116BD6E15D0576300BAFFEB /* playback-controls.png in Resources */ = {isa = PBXBuildFile; fileRef = 9116BD6D15D0576300BAFFEB /* playback-controls.png */; };
+		91496E8A15D2DB5F00C09999 /* glyphicons_023_cogwheels.png in Resources */ = {isa = PBXBuildFile; fileRef = 91496E8815D2DB5F00C09999 /* glyphicons_023_cogwheels.png */; };
+		91496E8B15D2DB5F00C09999 /* glyphicons_023_cogwheels@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91496E8915D2DB5F00C09999 /* glyphicons_023_cogwheels@2x.png */; };
+		91496E8E15D2E56C00C09999 /* LCCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91496E8D15D2E56C00C09999 /* LCCatalogViewController.m */; };
 		919DE62315D066E000C5FAEC /* glyphicons_012_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 919DE62115D066E000C5FAEC /* glyphicons_012_heart.png */; };
 		919DE62415D066E000C5FAEC /* glyphicons_012_heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 919DE62215D066E000C5FAEC /* glyphicons_012_heart@2x.png */; };
 		919DE62815D0670000C5FAEC /* glyphicons_022_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 919DE62615D0670000C5FAEC /* glyphicons_022_fire.png */; };
@@ -16,7 +19,7 @@
 		919DE63515D0676E00C5FAEC /* glyphicons_054_clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 919DE63315D0676E00C5FAEC /* glyphicons_054_clock@2x.png */; };
 		919DE63815D0689C00C5FAEC /* glyphicons_071_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 919DE63615D0689C00C5FAEC /* glyphicons_071_book.png */; };
 		919DE63915D0689C00C5FAEC /* glyphicons_071_book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 919DE63715D0689C00C5FAEC /* glyphicons_071_book@2x.png */; };
-		919DE64015D0702200C5FAEC /* LCNowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919DE63F15D0702200C5FAEC /* LCNowPlayingViewController.m */; };
+		919DE64015D0702200C5FAEC /* LCBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919DE63F15D0702200C5FAEC /* LCBookViewController.m */; };
 		91D875D615D03A6600E4D629 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D875D515D03A6600E4D629 /* UIKit.framework */; };
 		91D875D815D03A6600E4D629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D875D715D03A6600E4D629 /* Foundation.framework */; };
 		91D875DA15D03A6600E4D629 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D875D915D03A6600E4D629 /* CoreGraphics.framework */; };
@@ -45,6 +48,10 @@
 
 /* Begin PBXFileReference section */
 		9116BD6D15D0576300BAFFEB /* playback-controls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playback-controls.png"; sourceTree = "<group>"; };
+		91496E8815D2DB5F00C09999 /* glyphicons_023_cogwheels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_023_cogwheels.png; sourceTree = "<group>"; };
+		91496E8915D2DB5F00C09999 /* glyphicons_023_cogwheels@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_023_cogwheels@2x.png"; sourceTree = "<group>"; };
+		91496E8C15D2E56B00C09999 /* LCCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCatalogViewController.h; sourceTree = "<group>"; };
+		91496E8D15D2E56C00C09999 /* LCCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCatalogViewController.m; sourceTree = "<group>"; };
 		919DE62115D066E000C5FAEC /* glyphicons_012_heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_012_heart.png; sourceTree = "<group>"; };
 		919DE62215D066E000C5FAEC /* glyphicons_012_heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_012_heart@2x.png"; sourceTree = "<group>"; };
 		919DE62615D0670000C5FAEC /* glyphicons_022_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_022_fire.png; sourceTree = "<group>"; };
@@ -53,8 +60,8 @@
 		919DE63315D0676E00C5FAEC /* glyphicons_054_clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_054_clock@2x.png"; sourceTree = "<group>"; };
 		919DE63615D0689C00C5FAEC /* glyphicons_071_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_071_book.png; sourceTree = "<group>"; };
 		919DE63715D0689C00C5FAEC /* glyphicons_071_book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphicons_071_book@2x.png"; sourceTree = "<group>"; };
-		919DE63E15D0702200C5FAEC /* LCNowPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNowPlayingViewController.h; sourceTree = "<group>"; };
-		919DE63F15D0702200C5FAEC /* LCNowPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNowPlayingViewController.m; sourceTree = "<group>"; };
+		919DE63E15D0702200C5FAEC /* LCBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBookViewController.h; sourceTree = "<group>"; };
+		919DE63F15D0702200C5FAEC /* LCBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBookViewController.m; sourceTree = "<group>"; };
 		91D875D115D03A6600E4D629 /* DTBPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTBPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D875D515D03A6600E4D629 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91D875D715D03A6600E4D629 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -203,8 +210,10 @@
 			children = (
 				91D8762615D044C100E4D629 /* LCBookshelfViewController.h */,
 				91D8762715D044C100E4D629 /* LCBookshelfViewController.m */,
-				919DE63E15D0702200C5FAEC /* LCNowPlayingViewController.h */,
-				919DE63F15D0702200C5FAEC /* LCNowPlayingViewController.m */,
+				919DE63E15D0702200C5FAEC /* LCBookViewController.h */,
+				919DE63F15D0702200C5FAEC /* LCBookViewController.m */,
+				91496E8C15D2E56B00C09999 /* LCCatalogViewController.h */,
+				91496E8D15D2E56C00C09999 /* LCCatalogViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +230,8 @@
 		91D8761F15D03B0200E4D629 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				91496E8815D2DB5F00C09999 /* glyphicons_023_cogwheels.png */,
+				91496E8915D2DB5F00C09999 /* glyphicons_023_cogwheels@2x.png */,
 				919DE63615D0689C00C5FAEC /* glyphicons_071_book.png */,
 				919DE63715D0689C00C5FAEC /* glyphicons_071_book@2x.png */,
 				919DE63215D0676E00C5FAEC /* glyphicons_054_clock.png */,
@@ -318,6 +329,8 @@
 				919DE63515D0676E00C5FAEC /* glyphicons_054_clock@2x.png in Resources */,
 				919DE63815D0689C00C5FAEC /* glyphicons_071_book.png in Resources */,
 				919DE63915D0689C00C5FAEC /* glyphicons_071_book@2x.png in Resources */,
+				91496E8A15D2DB5F00C09999 /* glyphicons_023_cogwheels.png in Resources */,
+				91496E8B15D2DB5F00C09999 /* glyphicons_023_cogwheels@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +368,8 @@
 				91D875E215D03A6600E4D629 /* main.m in Sources */,
 				91D875E615D03A6600E4D629 /* LCAppDelegate.m in Sources */,
 				91D8762815D044C100E4D629 /* LCBookshelfViewController.m in Sources */,
-				919DE64015D0702200C5FAEC /* LCNowPlayingViewController.m in Sources */,
+				919DE64015D0702200C5FAEC /* LCBookViewController.m in Sources */,
+				91496E8E15D2E56C00C09999 /* LCCatalogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +449,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,7 +470,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
