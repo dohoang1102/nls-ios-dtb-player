@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Test Report</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+  </head>
+  <body>
+    <header class="title">
+      <h1>Test Report</h1>
+    </header>
+
+    <section class="files">
+      <header><h1>TEST FILES</h1></header>
+      <ul>
+        <% @test_files.each_with_index do |file, i| %>
+          <li id="file-<%= file.gsub('.','') %>">
+            <a href="#<%= file.gsub('.','') %>">
+              <%= file %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+
+    <article id="results">
+      <% @test_files.each do |file| %>
+        <section id="<%= file.gsub('.','') %>">
+
+          <h1><%= file %></h1>
+
+          <% @devices.each do |device| %>
+            <section class="device <%= device %>">
+              <h1><%= device %></h1>
+              <%= results_of_test device, file %>
+            </section>
+          <% end %>
+
+        </section>
+      <% end %>
+    </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="resources/script.js"></script>
+  </body>
+</html>

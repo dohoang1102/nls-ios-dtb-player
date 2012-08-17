@@ -1,0 +1,3 @@
+[submodule "Tests/Automation/tuneup"]
+	path = Tests/Automation/tuneup
+	url = git@github.com:nearinfinity/tuneup_js.git

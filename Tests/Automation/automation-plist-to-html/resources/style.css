@@ -1,0 +1,213 @@
+* { margin:0; padding:0; }
+
+body {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+body h1 {
+  font-weight: normal;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50px;
+  z-index: 2;
+
+
+
+  background-image: -o-linear-gradient(-90deg, #C8CFD9 0%, #A2ABB8 100%);
+  background-image: -moz-linear-gradient(-90deg, #C8CFD9 0%, #A2ABB8 100%);
+  background-image: -webkit-linear-gradient(-90deg, #C8CFD9 0%, #A2ABB8 100%);
+  background-image: -ms-linear-gradient(-90deg, #C8CFD9 0%, #A2ABB8 100%);
+  background-image: linear-gradient(-90deg, #C8CFD9 0%, #A2ABB8 100%);
+  border: 1px solid #979797;
+
+  -moz-box-shadow:    0px 2px 0px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 0px 2px 0px rgba(0,0,0,0.50);
+  box-shadow:         0px 2px 0px rgba(0,0,0,0.50);
+}
+.title h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+
+  
+  -moz-box-shadow:    0px 2px 4px rgba(255,255,255,0.50);
+  -webkit-box-shadow: 0px 2px 4px rgba(255,255,255,0.50);
+  box-shadow:         0px 2px 4px rgba(255,255,255,0.50);
+  
+}
+
+.files {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 229px;
+  bottom: 0;
+
+  overflow: auto;
+
+  /*-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  */
+
+  background: #C8CFD9;
+  border-right: 1px solid #979797;
+}
+.files > header {
+  padding: 1em;
+}
+.files > header > h1 {
+  color: #333;
+  font-size: 110%;
+  -moz-text-shadow:    0px 1px 0px rgba(255,255,255,0.5);
+  -webkit-text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+  text-shadow:         0px 1px 0px rgba(255,255,255,0.5);
+}
+.files ul {
+  list-style: none;
+}
+.files ul li {
+}
+.files ul li.selected {
+  color: white;
+  color: rgba(255,255,255,0.9);
+  background: #B6C2D5;
+
+  background-image: -o-linear-gradient(-90deg, #9FAECE 0%, #7083AB 100%);
+  background-image: -moz-linear-gradient(-90deg, #9FAECE 0%, #7083AB 100%);
+  background-image: -webkit-linear-gradient(-90deg, #9FAECE 0%, #7083AB 100%);
+  background-image: -ms-linear-gradient(-90deg, #9FAECE 0%, #7083AB 100%);
+  background-image: linear-gradient(-90deg, #9FAECE 0%, #7083AB 100%);
+
+  -moz-box-shadow:    0px 1px 1px rgba(0,0,0,0.85);
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.85);
+  box-shadow:         0px 1px 1px rgba(0,0,0,0.85);
+
+  -moz-box-shadow:    inset 0px 1px 0px rgba(255,255,255,0.5);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5);
+  box-shadow:         inset 0px 1px 0px rgba(255,255,255,0.5);
+}
+.files ul li a {
+  padding: 1em;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  background: url(green.tiff) no-repeat 5px center;
+  background-size: 16px;
+  padding-left: 26px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.files ul li a.pass { background-image: url(green.tiff); }
+.files ul li a.warn { background-image: url(yellow.tiff); }
+.files ul li a.fail { background-image: url(red.tiff); }
+.files ul li a ul li { 
+  float: left; 
+  font-size: 85%;
+  opacity: 0.7;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+
+#results {
+  position: absolute;
+  left: 230px;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+
+  overflow: auto;
+  padding: 2em;
+  padding-top: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#results > section > h1 {
+  font-size: 300%;
+  color: #333;
+  padding-top: 0.5em;
+}
+#results > section {
+  display: none;
+}
+#results > section:target {
+  display: block;
+}
+#results section.device > h1 {
+  background: #C8CFD9;
+  padding: 0.4em 1em;
+  color: black;
+  font-size: 200%;
+  text-shadow: 0 1px 0 white;
+  opacity: 0.3;
+  margin: 1em -1em;
+}
+#results section.device > ul > li > h1:hover {
+  background: #E7EAEF;
+  cursor: pointer;
+}
+#results section.device > ul li ul {
+  display: none;
+}
+#results section.device > ul li.expanded ul {
+  display: block;
+}
+#results ul {
+  margin: 0.5em 1em;
+}
+#results ul  {
+  list-style: none;
+}
+#results ul li {
+  padding-left: 21px;
+  font-family: helvetica;
+  font-weight: normal;
+}
+#results ul li.has_screen {
+
+  background: #EAEEF0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: block;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+}
+
+#results ul li figure {
+  text-align: center;
+}
+#results ul li img {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+li.pass {
+  background: url(green.tiff) no-repeat;
+  background-size: 16px;
+}
+li.pass li.pass:last-child {
+  background: none;
+}
+
+li.error, li.fail {
+  background: url(red.tiff) no-repeat;
+  background-size: 16px;
+}
+
+#results ul li.fail.has_screen {
+  background: #EAEEF0 url(red.tiff) no-repeat 0.25em 1em;
+}
